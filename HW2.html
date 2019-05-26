@@ -2,23 +2,33 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Product name</h1>
-        <ul>
-            <li>Put on this page information about your product</li>
-            <li>A detailed description of your product</li>
-            <li>Tell us about the advantages and merits</li>
-            <li>Associate the page with the payment system</li>
-        </ul>
+        <section class="header-block">
+            <header class="main-header">
+                <h1>Product name</h1>
+            </header>
+            <ul>
+                <li>Put on this page info about your product</li>
+                <li>A detailed description of your product</li>
+                <li>Tell us about the advantages and merits</li>
+                <li>Associate the page with the payment system</li>
+            </ul>
+        </section>
+        <div class="white-rectangle"></div>
+        
     </header>
 
     <main>
         <section class="about">
-            <h2>About your product</h2>
-            <article>
+            <header>
+                <h2>About your product</h2>
+            </header>
+                <article>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum 
@@ -30,12 +40,15 @@
                     quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
                 </p>
             </article>
+            <div class="blue-rectangle-about"></div>
         </section>
 
         <section class="pluses">
-            <h2>Dignity and pluses product</h2>
+            <header>
+                <h2>Dignity and pluses product</h2>
+            </header>
             <article>
-                <ul class="list-pluses">
+                <ul>
                     <li>
                         Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, 
                         impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit 
@@ -70,11 +83,15 @@
             </article>
         </section>
 
-        <section class="scrinshots">
-            <ul class="list-scrinshots">
+    <section class="screenshots">
+        <header>
+            <h2>Screenshots</h2>
+        </header>
+            <ul class="list-screenshots">
                 <li>
                     <figure>
-                        <img src="blue-rectangle.jpg" alt="Слот для картинки"> <!-- Изображений пока нет -->
+                        <div class="rectangle"></div>
+                        <!--img src="blue-rectangle.jpg" alt="Слот для картинки" Вариант с изображением -->
                         <figcaption>
                             <h3>The description for the image</h3>
                             <p>
@@ -89,7 +106,8 @@
 
                 <li>
                     <figure>
-                        <img src="blue-rectangle.jpg" alt="Слот для картинки">
+                        <div class="rectangle"></div>
+                        <!--img src="blue-rectangle.jpg" alt="Слот для картинки" Вариант с изображением -->
                         <figcaption>
                             <h3>The description for the image</h3>
                             <p>
@@ -103,7 +121,8 @@
 
                 <li>
                     <figure>
-                        <img src="blue-rectangle.jpg" alt="Слот для картинки">
+                        <div class="rectangle"></div>
+                        <!--img src="blue-rectangle.jpg" alt="Слот для картинки" Вариант с изображением -->
                         <figcaption>
                             <h3>The description for the image</h3>
                             <p>
@@ -118,7 +137,8 @@
 
                 <li>
                     <figure>
-                        <img src="blue-rectangle.jpg" alt="Слот для картинки">
+                        <div class="rectangle"></div>
+                        <!--img src="blue-rectangle.jpg" alt="Слот для картинки" Вариант с изображением -->
                         <figcaption>
                                 <h3>The description for the image</h3>
                                 <p>
@@ -134,61 +154,88 @@
         </section>
     </main>
 
-    <aside class="reviews">
-        <ul class="list-reviews">
-             <li>
-                <section>
-                    <img src="blue-circle.jpg" alt="Слот для аватарки"> <!-- Изображений пока нет -->
-                    <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
-                        iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
-                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                    </blockquote>
-                    <footer><span>Lourens S.</span></footer>
-                </section>
-            </li>
+    <aside class="reviews">       
+            <header>
+                <h2>Reviews</h2>
+            </header>
 
-            <li>            
-                <section>
-                    <img src="blue-circle.jpg" alt="Слот для аватарки">
-                    <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
-                        iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
-                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                    </blockquote>
-                    <footer><span>Lourens S.</span></footer>
-                </section>
-            </li>
+            <section class="reviews-container">
+                <ul class="list-reviews">
+                    <li>
+                        <section>
+                            <div class="blue-circle"></div>
+                            <div class="gray-block">
+                                <div class="text">
+                                    <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
+                                    iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
+                                    Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                </p>
+                                    <footer><span>Lourens S.</span></footer>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
 
-            <li>
-                <section>
-                    <img src="blue-circle.jpg" alt="Слот для аватарки">
-                    <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
-                        iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
-                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                    </blockquote>
-                    <footer><span>Lourens S.</span></footer>
-                </section>
-            </li>
+                    <li>            
+                        <section>
+                            <div class="blue-circle"></div>
+                            <div class="gray-block">
+                                <div class="text">
+                                    <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
+                                    iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
+                                    Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                </p>
+                                    <footer><span>Lourens S.</span></footer>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </li>
 
-            <li>
-                <section>
-                    <img src="blue-circle.jpg" alt="Слот для аватарки">
-                    <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
-                        iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
-                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                    </blockquote>
-                    <footer><span>Lourens S.</span></footer>
-                </section>
-            </li>
-        </ul>
+                    <li>
+                        <section>
+                            <div class="blue-circle"></div>
+                            <div class="gray-block">
+                                <div class="text">
+                                    <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
+                                    iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
+                                    Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>
+                                    <footer><span>Lourens S.</span></footer>
+                                </div>    
+                            </div>
+                        </section>
+                    </li>
+
+                    <li>
+                        <section>
+                            <div class="blue-circle"></div>
+                            <div class="gray-block">
+                                <div class="text">
+                                    <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, 
+                                    iste quia doloribus autem aperiam nulla ea neque reprehenderit. 
+                                    Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>                             
+                                <footer><span>Lourens S.</span></footer>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+        </section>
     </aside>
 
     <aside class="buy-it-now">
-        <h2>Buy it now</h2>
+        <header class="bin-fh">
+            <h2>Buy it now</h2>
+        </header>
         <ul>
-            <li>
-                <section class="but-type buy-standart">
-                    <h2>Standart</h2>
-                    <p>$100</p>
+            <li class="outli">
+                <section class="buy-type buy-standart">
+                    <header class="hs">
+                        <h2>Standart</h2>
+                    </header>
+                    <div class="price">$100</div>
                     <ol>
                         <li>Porro officia cumque sint deleniti; </li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -196,15 +243,17 @@
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
                     <div class="bottom-buy">
-                        <a href="#">BUY</a>
+                        <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
             </li>
             
-            <li>
+            <li class="outli">
                 <section class="buy-type buy-premium">
-                    <h2>Premium</h2>
-                    <p>$150</p>
+                    <header>
+                        <h2>Premium</h2>
+                    </header>
+                    <div class="price">$150</div>
                     <ol>
                         <li>Porro officia cumque sint deleniti; </li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -216,15 +265,17 @@
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
                     <div class="bottom-buy">
-                        <a href="#">BUY</a>
+                        <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
             </li>
             
-            <li>
+            <li class="outli">
                 <section class="buy-type buy-lux">
-                    <h2>lux</h2>
-                    <p>$200</p>
+                    <header>
+                        <h2>Lux</h2>
+                    </header>
+                    <div class="price">$200</div>
                     <ol>
                         <li>Porro officia cumque sint deleniti; </li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -240,26 +291,30 @@
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
                     <div class="bottom-buy">
-                        <a href="#">BUY</a>
+                        <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
             </li>
         </ul>
     </aside>
 
-    <footer>
-        <section class="contacts">
-            <form action="#" method="POST" class="contacts-form">
+    <footer class="footer-container">
+        <header>
+            <h2>Contacts</h2>
+        </header>
+        <section class="contacts-container">
+            <form action="empty_tests.html" method="POST" class="contacts-form">
                 <p> 
                     <input type="first_name" name="first_name" placeholder="Your name:">
                 </p>
+                <p>
                     <input type="email" name="email" placeholder="Your email:">
                 </p>
                 <p>
                     <textarea rows= "10"name="message" placeholder="Your message:"></textarea>
                 </p>
                 <p>
-                    <input type="submit" value="SEND"> 
+                    <input type="submit" value="SEND" class="btn-submit"> 
                 </p>
             </form>
 
@@ -267,36 +322,36 @@
                 <ul class="contacts-list">
                     <li>
                         <figure>
-                            <img src="skype-logo.jpg" alt="Лого skype"> <!-- Изображений пока нет -->
+                            <img src="images/skype.png" alt="Лого skype"> 
                             <figcaption><span>here_your_login_skype</span></figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="icq-logo.jpg" alt="Лого icq">
+                            <img src="images/icq.png" alt="Лого icq">
                             <figcaption><span>279679659</span></figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="mailru-logo.jpg" alt="Символ '@'">
+                            <img src="images/sobaka.png" alt="Символ '@'">
                             <figcaption><span>psdhtmlcss@mail.ru</span></figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="phone-logo.jpg" alt="Лого телефонной трубки">
+                            <img src="images/phone.png" alt="Лого телефонной трубки">
                             <figcaption><span>80 00 4568 55 55</span></figcaption>
                         <figure>
                     </li>
 
                     <li class="contacts-social-links">
                         <ul class="contacts-social-links-list">
-                            <li><a href="#"><img src="twitter-logo.jpg" alt="Лого твиттера"></a></li>
-                            <li><a href="#"><img src="facebook-logo.jpg" alt="Лого фэйсбука"></a></li>
-                            <li><a href="#"><img src="in-logo.jpg" alt="Лого in"></a></li>
-                            <li><a href="#"><img src="gmail-logo.jpg" alt="Лого gmail"></a></li>
-                            <li><a href="#"><img src="youtube-logo.jpg" alt="Лого youTube"></a></li>
+                            <li><a href="empty_tests.html"><div class="twitter"></div></a></li>
+                            <li><a href="empty_tests.html"><div class="facebook"></div></a></li>
+                            <li><a href="empty_tests.html"><div class="in"></div></a></li>
+                            <li><a href="empty_tests.html"><div class="gmail"></div></a></li>
+                            <li><a href="empty_tests.html"><div class="youTube"></div></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -304,7 +359,7 @@
         </section>
 
         <footer class="copyright">
-            <span>Copyright © 2014 Product name · PSD HTML CSS</span>
+            <p>Copyright © 2014 Product name · PSD HTML CSS</p>
         </footer>
     </footer>
 
