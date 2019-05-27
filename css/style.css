@@ -253,7 +253,7 @@ main .screenshots .list-screenshots h3{
 
 .buy-it-now{
     min-width:1600px;
-    height:750px;
+    height:700px;
     color:white;
 }
 
@@ -299,7 +299,13 @@ main .screenshots .list-screenshots h3{
     padding-bottom:5px;
 }
 
-.buy-it-now .buy-type .bottom-buy{
+.buy-it-now .buy-type .button-buy{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buy-it-now .buy-type .button-buy a{
+    display:block;
     width:280px;
     height:30px;
     background-color:white;
@@ -309,12 +315,15 @@ main .screenshots .list-screenshots h3{
     padding-top:10px;
     margin: 0 auto;
     margin-top: 20px;
-}
-
-.buy-it-now .buy-type a{
     text-decoration:none;
     font-weight:bold;
     color:#445162;
+}
+
+.buy-it-now .buy-type .button-buy a:hover{
+    background-color:rgb(128, 128, 128);
+    color:white;
+    border-color:rgb(128, 128, 128);
 }
 
 .buy-it-now .buy-standart{
@@ -337,8 +346,21 @@ main .screenshots .list-screenshots h3{
     height:510px;
 }
 
+.location-container{
+    min-width:1600px;
+    height: 1100px;
+}
+
+.location-container header{
+    text-align:center;
+    height:45px;
+    padding-top:50px;
+    color:#445162;
+    min-width:1600px;
+}
+
 .footer-container{
-    width:100%;
+    min-width:1600px;
     height:580px;
     background-color:#445162;
 }
@@ -367,14 +389,13 @@ main .screenshots .list-screenshots h3{
 }
 
 .footer-container .contacts-list{
-   position:absolute;
-   top:0;
-   right:0;
-   width:240px;
-   left:565px;
-   list-style-type: none;
-   color:white;
-   
+    position:absolute;
+    top:0;
+    right:0;
+    width:240px;
+    left:565px;
+    list-style-type: none;
+    color:white;
 }
 
 .footer-container .contacts-list li{
@@ -401,6 +422,13 @@ main .screenshots .list-screenshots h3{
     font-weight:500px;
 }
 
+.footer-container .contacts-form textarea::-webkit-input-placeholder{
+    padding-left:10px;
+    font-size:18px;
+    color:#445162;
+    font-weight:500px;
+}
+
 .footer-container .contacts-form textarea{
     border-radius:6px;
     width:500px;
@@ -414,22 +442,20 @@ main .screenshots .list-screenshots h3{
     color:white;
 }
 
-
-.footer-container .contacts-form textarea::-webkit-input-placeholder {
-    padding-left:10px;
-    padding-top:3px;
-    font-size:19px;
-    color:#445162;
-    font-weight:500px;
-  }
-  
-
 .footer-container .contacts-form .btn-submit{
     width:140px;
     margin-left:150px;
+    background-color:  #ffffff;
+    height: 45px;
+    text-align:center;
+    line-height:45px;
     color:#445162;
-    font-weight: bold;
-    background-color:white;
+    font-weight: 700;
+}
+
+.footer-container .contacts-form .btn-submit:hover{
+    background-color:rgb(128, 128, 128);
+    color:white;
 }
 
 .footer-container .contacts-form p{

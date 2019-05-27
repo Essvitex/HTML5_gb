@@ -242,7 +242,7 @@
                         <li>Cum odio, iste quia doloribus autem;</li>
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
-                    <div class="bottom-buy">
+                    <div class="button-buy">
                         <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
@@ -264,7 +264,7 @@
                         <li>Cum odio, iste quia doloribus autem; </li>
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
-                    <div class="bottom-buy">
+                    <div class="button-buy">
                         <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
@@ -290,13 +290,20 @@
                         <li>Cum odio, iste quia doloribus autem; </li>
                         <li>Aperiam nulla ea neque.</li>
                     </ol>
-                    <div class="bottom-buy">
+                    <div class="button-buy">
                         <a href="empty_tests.html">BUY</a>
                     </div>
                 </section>
             </li>
         </ul>
     </aside>
+
+    <address class="location-container">
+        <header>
+            <h2>Where is our office?</h2>
+        </header>
+        <video preload="auto" autoplay="true" muted="muted" src="videos/Pexels Videos 1826904.mp4" loop="true" type='video/mp4'></video>
+    </address>
 
     <footer class="footer-container">
         <header>
@@ -305,13 +312,13 @@
         <section class="contacts-container">
             <form action="empty_tests.html" method="POST" class="contacts-form">
                 <p> 
-                    <input type="first_name" name="first_name" placeholder="Your name:">
+                    <input type="first_name" name="first_name" placeholder="Your name:" pattern="([a-zA-Z])+" required>
                 </p>
                 <p>
-                    <input type="email" name="email" placeholder="Your email:">
+                    <input type="email" name="email" placeholder="Your email:" required>
                 </p>
                 <p>
-                    <textarea rows= "10"name="message" placeholder="Your message:"></textarea>
+                    <textarea rows= "10"name="message" placeholder="Your message:" required></textarea>
                 </p>
                 <p>
                     <input type="submit" value="SEND" class="btn-submit"> 
@@ -359,7 +366,7 @@
         </section>
 
         <footer class="copyright">
-            <p>Copyright © 2014 Product name · PSD HTML CSS</p>
+            <p>Copyright © 2019 Product name · PSD HTML CSS</p>
         </footer>
     </footer>
 
