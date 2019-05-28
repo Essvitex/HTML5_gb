@@ -73,8 +73,8 @@ main .about article{
     width:60%;
     height:210px;
     position:relative;
-    background-color:white;
     z-index:1;
+    background-color:white;
 }
 
 main .about article p{
@@ -200,8 +200,23 @@ main .screenshots .list-screenshots h3{
 }
 
 .reviews .list-reviews li:nth-child(2n){
-    margin-left:110px;
+    margin-left:130px;
 }
+
+@keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+  }
 
 .reviews .blue-circle{
     width:72px;
@@ -211,6 +226,7 @@ main .screenshots .list-screenshots h3{
     float:left;
     margin-right:10px;
     margin-left:10px;
+    animation: pulsing 5s infinite;
 }
 
 .reviews .gray-block{
@@ -362,7 +378,15 @@ main .screenshots .list-screenshots h3{
 .footer-container{
     min-width:1600px;
     height:580px;
-    background-color:#445162;
+    background:linear-gradient(45deg, #445162, #4CA1AF);
+    animation: deep-sea-gradient 25s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes deep-sea-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .footer-container header{
@@ -371,6 +395,7 @@ main .screenshots .list-screenshots h3{
     padding-top:50px;
     color:white;
     min-width:1600px;
+    
 }
 
 .footer-container .contacts-container{
@@ -403,9 +428,14 @@ main .screenshots .list-screenshots h3{
 }
 
 .footer-container .contacts-form input{
+    padding-left:10px;
+    padding-right:10px;
     border-radius:6px;
     width:500px;
     height:40px;
+    color:#445162;
+    font-size:18px;
+    font-weight:500px;
 }
 
 .footer-container .contacts-form input:focus{
@@ -415,24 +445,35 @@ main .screenshots .list-screenshots h3{
     color:white;
 }
 
-.footer-container .contacts-form input::-webkit-input-placeholder{
-    padding-left:10px;
+.footer-container .contacts-form input::placeholder{
     font-size:18px;
     color:#445162;
     font-weight:500px;
 }
 
-.footer-container .contacts-form textarea::-webkit-input-placeholder{
-    padding-left:10px;
+.footer-container .contacts-form input::-webkit-input-placeholder{
+    font-size:18px;
+    color:#445162;
+    font-weight:500px;
+}
+
+.footer-container .contacts-form textarea::-ms-input-placeholder{
     font-size:18px;
     color:#445162;
     font-weight:500px;
 }
 
 .footer-container .contacts-form textarea{
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
     border-radius:6px;
     width:500px;
     height:160px;
+    color:#445162;
+    font-size:20px;
+    font-weight:700px;
+    resize:none;
 }
 
 .footer-container .contacts-form textarea:focus{
@@ -447,7 +488,6 @@ main .screenshots .list-screenshots h3{
     margin-left:150px;
     background-color:  #ffffff;
     height: 45px;
-    text-align:center;
     line-height:45px;
     color:#445162;
     font-weight: 700;
@@ -462,8 +502,32 @@ main .screenshots .list-screenshots h3{
     margin-bottom:20px;
 }
 
-.footer-container .contacts-list img{
+.footer-container .contacts-list figure div{
     float:left;
+}
+
+.footer-container .contacts-list .licontact{
+    margin-top:-5px;
+}
+
+.footer-container .contacts-list .contact-skype{
+    width: 24px; height: 26px;
+    background: url(../images/sprite-contact-list.png) -58px -10px;
+}
+
+.footer-container .contacts-list .contact-icq{
+    width: 28px; height: 26px;
+    background: url(../images/sprite-contact-list.png) -10px -10px;
+}
+
+.footer-container .contacts-list .contact-mail{
+    width: 21px; height: 22px;
+    background: url(../images/sprite-contact-list.png) -54px -56px;
+}
+
+.footer-container .contacts-list .contact-phone{
+    width: 24px; height: 23px;
+    background: url(../images/sprite-contact-list.png) -10px -56px;
 }
 
 .footer-container .contacts-list figcaption span{
@@ -480,54 +544,50 @@ main .screenshots .list-screenshots h3{
     list-style-type:none;
 }
 
-.footer-container .contacts-social-links-list .twitter{
-    width:43px;
+.footer-container .contacts-social-links-list li div{
+    width:42px;
     height:43px;
-    background: url(../images/circle-twitter.png) no-repeat;
+}
+
+.footer-container .contacts-social-links-list .twitter{
+    
+    background: url(../images/sprite-circles.png) -136px -10px;
 }
 
 .footer-container .contacts-social-links-list .twitter:hover{
-    background: url(../images/circle-twitter-hover.png) no-repeat;
+    background: url(../images/sprite-logo-hovers.png) -136px -10px;
 }
 
 .footer-container .contacts-social-links-list .facebook{
-    width:43px;
-    height:43px;
-    background: url(../images/circle-facebook.png) no-repeat;
+    background: url(../images/sprite-circles.png) -73px -72px;
 }
 
 .footer-container .contacts-social-links-list .facebook:hover{
-    background: url(../images/circle-facebook-hover.png) no-repeat;
+    background: url(../images/sprite-logo-hovers.png) -73px -72px;
 }
 
 .footer-container .contacts-social-links-list .in{
-    width:43px;
-    height:43px;
-    background: url(../images/circle-in.png) no-repeat;
+    background: url(../images/sprite-circles.png) -73px -10px;
 }
 
 .footer-container .contacts-social-links-list .in:hover{
-    background: url(../images/circle-in-hover.png) no-repeat;
+    background: url(../images/sprite-logo-hovers.png) -73px -10px;
 }
 
 .footer-container .contacts-social-links-list .gmail{
-    width:43px;
-    height:43px;
-    background: url(../images/circle-gmail.png) no-repeat;
+    background: url(../images/sprite-circles.png) -10px -10px;
 }
 
 .footer-container .contacts-social-links-list .gmail:hover{
-    background: url(../images/circle-gmail-hoverpng.png) no-repeat;
+    background: url(../images/sprite-logo-hovers.png) -10px -10px;
 }
 
 .footer-container .contacts-social-links-list .youTube{
-    width:43px;
-    height:43px;
-    background: url(../images/circle-youTube.png) no-repeat;
+    background: url(../images/sprite-circles.png) -10px -72px;
 }
 
 .footer-container .contacts-social-links-list .youTube:hover{
-    background: url(../images/circle-youTube-hover.png) no-repeat;
+    background: url(../images/sprite-logo-hovers.png) -10px -72px;
 }
 
 .footer-container .contacts-social-links-list li{
@@ -549,11 +609,63 @@ footer .copyright p{
 }
 
 #tests{
-    background-color: #445162;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg, #445162, #4CA1AF, #ffffff, yellow, lightgreen);
+    animation: deep-sea-gradient 25s ease infinite;
+    background-size: 400% 400%; /*the size should be more than current
+     - needed for animation*/
     color:white;
 }
 
 #tests header{
-    width:1000px;
-    margin:100px auto;
+    width:100%;
+    height:100%;
+    text-align:center;
+    margin-top:350px;
+    background:linear-gradient(45deg, #445162, #4CA1AF, #ffffff, yellow, lightgreen);
+    animation: deep-sea-gradient 25s ease infinite;
+    background-size: 400% 400%;
+}
+
+#tests header h1{
+    font-size:20em;
+    animation: bounce 0.5s alternate infinite ease-in;
+}
+
+#tests header p{
+    float:bottom;
+    color: #556a85;
+}
+
+@media screen and (min-width:901px) {
+    @keyframes bounce {
+        0% {
+            transform: translateX(65%);
+        }
+        100% {
+            transform: translateX(-65%);
+        }
+    }
+  
+  #tests header h1 {
+    color: rgb(245, 165, 234);
+    display: inline-block; /*needed*/
+  }
+}
+
+@media screen and (max-width:900px) {
+    @keyframes bounce {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+  
+  #tests header h1 {
+    color: rgb(0, 255, 64);
+    display: block;
+  }
 }
